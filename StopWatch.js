@@ -3,7 +3,7 @@ class StopWatch {
     endTime;
 
     constructor() {
-        this.startTime = new Date().getTime();
+        this.startTime = Date.now();
     }
 
     getStartTime() {
@@ -15,11 +15,11 @@ class StopWatch {
     }
 
     start() {
-        return this.startTime = new Date().getTime();
+        return this.startTime = Date.now();
     }
 
     stop() {
-        return this.endTime = new Date().getTime();
+        return this.endTime = Date.now();
     }
 
     getElapsedTime() {
